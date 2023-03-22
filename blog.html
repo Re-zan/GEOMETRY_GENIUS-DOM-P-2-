@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog HTML</title>
+    <!-- 
+    links  css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header part  -->
+    <header class="lg:container mx-auto py-0 md:py-10">
+      <div class="navbar bg-sky-100 px-5">
+        <div class="navbar-start">
+          <div>
+            <h1 class="text-base md:text-4xl font-bold text-slate-900 pb-2">
+              Interactive
+            </h1>
+            <p class="text-base md:text-2xl text-slate-500 tracking-widest">
+              Geometry Genius
+            </p>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <a
+            class="btn bg-[#1090D8] border-0 py-4 px-14 text-white"
+            id="h_btn"
+            href="/index.html"
+          >
+            Home
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- main start -->
+    <main class="lg:container mx-auto mt-6 md:mt-0 text-center px-60">
+      <div>
+        <h2 class="text-4xl font-bold">
+          1. What is DOM and what is the purpouse of DOM?
+        </h2>
+        <p class="py-3">
+          DOM means Document Object Model. We need dom for interacting html to
+          browser. Beacuse browser only understand the object. Such as
+          window.document etc. We can see a html converted version on window or
+          we can say on browser.We need to manipulate object(html) that's how
+          object come.Simpley We can easily manipulate the html tags , add,
+          remove, and modify elements of a website and change the css style by
+          using dom.
+        </p>
+      </div>
+     
+       <div>
+        <h2 class="text-4xl font-bold">
+          2. How do you select an element by DOM ?
+        </h2>
+        <p class="py-3">
+          There are some methods. Such as
+          <ul>
+            <li>   =>getElementById</li>
+          <li>  =>getElementsByTagName</li>
+          <li> =>getElementsByClassName</li>
+          <li>  =>querySelectorAll</li>
+          <li>   =>querySelector</li>
+          <li>  =>anchors</li>
+        </ul>
+        </p>
+      </div> 
+
+      <div>
+        <h2 class="text-4xl font-bold">3. What is Event bubble ?</h2>
+        <p class="py-3">
+          Event bubble is a way of handling events in DOM hierarchy. For example
+          you have a section which contains h2, p and button. if you click the
+          button then an event will be triggered. Now the event will "bubble up"
+          and go to the p then it goes to the h2 and last not the least goes to
+          the section(parent elment). That's how an event bubble works in
+          DOM.This very important when we get a dynamic values. We can easily
+          control the elements of a section or div. We can also easily get the
+          data of the elements. It also makes our code shorter.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold">4. What is a callback function ?</h2>
+        <p class="py-3">
+          A callback function is a function which passed as an argument to another
+          function. When will be a callback function excuted that's completely
+          based on programmer . Where the programmer wants to excute the calback
+          function would be excuted. Basecaliy a programmer excute the allback
+          function after a certain task has completed. It mantains the code
+          flow. It reduces the codes.
+        </p>
+      </div>
+    </main>
+    <!-- links -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>

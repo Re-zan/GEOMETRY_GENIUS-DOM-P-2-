@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius Assignment</title>
+    <!-- 
+    links  css-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header part  -->
+    <header class="lg:container mx-auto py-0 md:py-10">
+      <div class="navbar bg-sky-100 px-5">
+        <div class="navbar-start">
+          <div>
+            <h1 class="text-base md:text-4xl font-bold text-slate-900 pb-2">
+              Interactive
+            </h1>
+            <p class="text-base md:text-2xl text-slate-500 tracking-widest">
+              Geometry Genius
+            </p>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <button class="btn bg-[#1090D8] border-0 py-4 px-14 text-white" id="blog_btn">Blog</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- main start -->
+    <main class="lg:container mx-auto mt-6 md:mt-0">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="col-span-1 md:col-span-2 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- triangle -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no1">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="triangle_title">Triangle</h2>
+              <p class="text-base my-2">
+                Area(A) = <span>0.5</span> <i class="fa-solid fa-xmark"> </i>
+                <span>b</span> <i class="fa-solid fa-xmark"></i> <span >h</span>
+              </p>
+              <div class="flex gap-4">
+                <div class="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="b"
+                    class="bg-[#F1F1F1] w-20 text-xl text-black px-3"
+                    id="triangle_b"
+                  /><span>cm</span>
+                </div>
+                <div class="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="h"
+                    class="bg-[#F1F1F1] w-20 text-xl text-black px-3"
+                    id="triangle_h"
+                  /><span>cm</span>
+                </div>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  g:text-white" id="triangle_btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rectangle -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no2">
+            <div>
+              <figure class="px-10 pt-10">
+                <img
+                  src="./images/rectangle.png"
+                  alt="Shoes"
+                  class="rounded-xl w-full h-full"
+                />
+              </figure>
+            </div>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="rectangle_title">Rectangle</h2>
+              <p class="text-base my-2">
+                Area(A) = <span>w</span> <i class="fa-solid fa-xmark"></i>
+                <span>l</span>
+              </p>
+              <div class="flex gap-4">
+                <div class="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="w"
+                    class="bg-[#F1F1F1] w-20 text-xl text-black px-3"
+                    id="rectangle_width"
+                  /><span>cm</span>
+                </div>
+                <div class="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="l"
+                    class="bg-[#F1F1F1] w-20 text-xl text-black px-3"
+                    id="rectangle_length"
+                  /><span>cm</span>
+                </div>
+              </div>
+
+              <div class="card-actions mt-4">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  text-white" id="rectangle_btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parallelogram -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no3">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/parallelogram.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="parallelogram_title">Parallelogram</h2>
+              <p class="text-base my-2 h-0">
+                Area(A) =
+                <span>b</span> <i class="fa-solid fa-xmark"></i> <span>h</span>
+              </p>
+              <p>b =<span id="parallelogram_b"> 10</span> cm, h = <span id="parallelogram_h">12 </span> cm</p>
+             
+              <div class="card-actions mt-3">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  text-white" id="parallelogram_btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- rhombus -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no4">
+            <figure class="px-10 pt-10">
+              <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="Rhombus_tittle">Rhombus</h2>
+              <p class="text-base my-2">
+                Area(A) = <span>0.5</span> <i class="fa-solid fa-xmark"> </i>
+                <span>d<sub>2</sub></span> <i class="fa-solid fa-xmark"></i>
+                <span>d<sub>2</sub></span>
+              </p>
+              <p>d<sub>2</sub> =<span id="Rhombus_b"> 16</span> cm, d<sub>2</sub> = <span id="Rhombus_h">8 </span> cm</p>
+
+              <div class="card-actions mt-4">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  text-white" id="Rhombus_btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pentagon -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no5">
+            <figure class="px-10 pt-10">
+              <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="Pentagon_title">Pentagon</h2>
+              <p class="text-base my-2">
+                Area(A) = <span>0.5</span> <i class="fa-solid fa-xmark"> </i>
+                <span>p</span> <i class="fa-solid fa-xmark"></i> <span>b</span>
+              </p>
+              <p>p =<span id="Pentagon_p"> 6</span> cm, b = <span id="Pentagon_b">10 </span> cm</p>
+
+              <div class="card-actions mt-4">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  text-white" id="Pentagon_btn">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ellipse -->
+          <div class="card w-full bg-base-100 shadow-xl border-inherit border" id="card_no6">
+            <figure class="px-10 pt-10">
+              <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-2xl font-bold" id="Ellipse_ttitle">Ellipse</h2>
+              <p class="text-base my-2">
+                Area(A) = <span>&#x1D70B</span><span>a</span><span>b</span>
+              </p>
+              <p>a =<span id="Ellipse_a"> 10</span> cm, b = <span id="Ellipse_b">4 </span> cm</p>
+              <div class="card-actions mt-4">
+                <button class="btn bg-[#1090D8] border-0 py-4 px-28  text-white" id="Ellipse_btn">
+                 
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- table -->
+        <div class="border-2 rounded-xl ">
+          <h2 class="text-3xl font-bold underline text-center">Area Calcultaion</h2>
+
+          <div class="overflow-x-auto my-4">
+            <table class="table w-full text-center">
+              <!-- head -->
+              <thead>
+              </thead>
+             
+              <tbody id="container_id">
+                <!-- row 1 -->
+              
+                <!-- row 2 -->
+              
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+    <!-- links -->
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
